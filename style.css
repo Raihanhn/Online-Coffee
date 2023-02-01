@@ -42,6 +42,20 @@ body{
     background: var(--bg);
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .7rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: brown;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
 .header{
     background: var(--bg);
     display: flex;
@@ -119,8 +133,54 @@ body{
 }
 
 .header .search-form label:hover{
+    color: var(--main-color);  
+}
+
+.header .cart-items-container{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh-9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+
+.header .cart-items-container .cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
     color: var(--main-color);
-    
+}
+
+.header .cart-items-container .cart-item .fa-times:hover{
+    color: var(--main-color);
+}
+
+.header .cart-items-container .cart-item .content h3{
+    font-size: 1.5rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.3rem;
+    color: brown;
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;  
 }
 
 
