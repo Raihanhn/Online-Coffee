@@ -246,7 +246,7 @@ body{
 }
 
 
-@media (max-width:991px){
+@media (max-width:768px){
     #menu-btn{
         display: inline-block;
     }
@@ -270,6 +270,21 @@ body{
         padding: .5rem;
         font-size: 2rem;
     }
+    
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+}
+
+
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    
 }
     
 
